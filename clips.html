@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style1.css">
+    <title>Clips</title>
+</head>
+
+<body>
+    <section class="clips" id="vid">
+        <div class="header">
+            <h1>
+                Clips
+            </h1>
+            <p>(This section contains spoilers!)</p>
+        </div>
+        <div class="card" style="
+      background-image: url('https://img1.looper.com/img/gallery/money-heist-part-5-release-date-cast-and-plot/intro-1587757587.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-1">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>C</span><span>C</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>s</span><span>s</span></span>
+                        <span><span>t</span><span>t</span></span>
+                        
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Intro of the cast</span>
+                            <span>in Tokyo's style</span>
+                        </span>
+                        <span>
+                            <span><span>Intro of the cast</span></span>
+                            <span><span>in Tokyo's style</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-1" class="trailer">
+            <video id="s-1" src="videos/cast_intro.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-1">
+        </div>
+        <script>
+            const button1 = document.querySelector("#btn-1");
+            const close1 = document.querySelector("#close-1");
+            const trailer1 = document.querySelector("#trailer-1");
+            const video1 = document.querySelector("#s-1");
+
+            button1.addEventListener('click', () => {
+                trailer1.style.visibility = "visible";
+                trailer1.style.opacity = 1;
+
+            });
+            close1.addEventListener('click', () => {
+                trailer1.style.visibility = "hidden";
+                trailer1.style.opacity = 0;
+                video1.pause();
+                video1.currentTime = 0;
+
+            });
+        </script>
+
+
+
+        <div class="card" style="
+      background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/4ea27b28-9dab-4cba-b7b8-8256fef63c1a/dc9wz4s-18efd72a-19a9-4fec-a193-0053cd361ac8.jpg/v1/fill/w_1024,h_506,q_75,strp/money_heist_by_iggidelrey_dc9wz4s-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3siaGVpZ2h0IjoiPD01MDYiLCJwYXRoIjoiXC9mXC80ZWEyN2IyOC05ZGFiLTRjYmEtYjdiOC04MjU2ZmVmNjNjMWFcL2RjOXd6NHMtMThlZmQ3MmEtMTlhOS00ZmVjLWExOTMtMDA1M2NkMzYxYWM4LmpwZyIsIndpZHRoIjoiPD0xMDI0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.-XHWwjiJOYfN6J1LozGRutC5VD1ahq49YnW13daVjUM');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-2">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>r</span><span>r</span></span>
+                        <span><span>e</span><span>e</span></span>
+                        <span><span>u</span><span>u</span></span>
+                        <span><span>n</span><span>n</span></span>
+                        <span><span>i</span><span>i</span></span>
+                        <span><span>o</span><span>o</span></span>
+                        <span><span>n</span><span>n</span></span>
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Professor and Berlin's reunion</span>
+                        </span>
+                        <span>
+                            <span><span>Professor and Berlin's reunion</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-2" class="trailer">
+            <video id="s-2" src="videos/proff_berlin_reunion.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-2">
+        </div>
+        <script>
+            const button2 = document.querySelector("#btn-2");
+            const close2 = document.querySelector("#close-2");
+            const trailer2 = document.querySelector("#trailer-2");
+            const video2 = document.querySelector("#s-2");
+
+            button2.addEventListener('click', () => {
+                trailer2.style.visibility = "visible";
+                trailer2.style.opacity = 1;
+
+            });
+            close2.addEventListener('click', () => {
+                trailer2.style.visibility = "hidden";
+                trailer2.style.opacity = 0;
+                video2.pause();
+                video2.currentTime = 0;
+
+            });
+        </script>
+
+        <div class="card" style="
+      background-image: url('https://i.ytimg.com/vi/v49OIzSf7iA/maxresdefault.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-3">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>L</span><span>L</span></span>
+                        <span><span>o</span><span>o</span></span>
+                        <span><span>v</span><span>v</span></span>
+                        <span><span>e</span><span>e</span></span>
+                        
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Tokyo and Rio's Love story</span>
+                        </span>
+                        <span>
+                            <span><span>Tokyo and Rio's Love story</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-3" class="trailer">
+            <video id="s-3" src="videos/tokyo_rio_lovestory.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-3">
+        </div>
+        <script>
+            const button3 = document.querySelector("#btn-3");
+            const close3 = document.querySelector("#close-3");
+            const trailer3 = document.querySelector("#trailer-3");
+            const video3 = document.querySelector("#s-3");
+
+            button3.addEventListener('click', () => {
+                trailer3.style.visibility = "visible";
+                trailer3.style.opacity = 1;
+
+            });
+            close3.addEventListener('click', () => {
+                trailer3.style.visibility = "hidden";
+                trailer3.style.opacity = 0;
+                video3.pause();
+                video3.currentTime = 0;
+
+            });
+        </script>
+
+        <div class="card" style="
+      background-image: url('https://www.samaa.tv/wp-content/uploads/2020/03/25624811.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-4">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>l</span><span>l</span></span>
+                        <span><span>i</span><span>i</span></span>
+                        <span><span>s</span><span>s</span></span>
+                        <span><span>b</span><span>b</span></span>
+                        <span><span>o</span><span>o</span></span>
+                        <span><span>n</span><span>n</span></span>
+                        
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Lisbon's spectacular comeback</span>
+                        </span>
+                        <span>
+                            <span><span>Lisbon's spectacular comeback</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-4" class="trailer">
+            <video id="s-4" src="videos/lisbon-returns.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-4">
+        </div>
+        <script>
+            const button4 = document.querySelector("#btn-4");
+            const close4 = document.querySelector("#close-4");
+            const trailer4 = document.querySelector("#trailer-4");
+            const video4 = document.querySelector("#s-4");
+
+            button4.addEventListener('click', () => {
+                trailer4.style.visibility = "visible";
+                trailer4.style.opacity = 1;
+
+            });
+            close4.addEventListener('click', () => {
+                trailer4.style.visibility = "hidden";
+                trailer4.style.opacity = 0;
+                video4.pause();
+                video4.currentTime = 0;
+
+            });
+        </script>
+        
+        <div class="card" style="
+      background-image: url('https://i.ytimg.com/vi/wsIDHI0JRJw/maxresdefault.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-5">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>b</span><span>b</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>d</span><span>d</span></span>
+                        <span><span>d</span><span>d</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>s</span><span>s</span></span>
+                        <span><span>s</span><span>s</span></span>
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Nairobi's baddass version</span>
+                        </span>
+                        <span>
+                            <span><span>Nairobi's baddass version</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-5" class="trailer">
+            <video id="s-5" src="videos/nairobi-badass.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-5">
+        </div>
+        <script>
+            const button5 = document.querySelector("#btn-5");
+            const close5 = document.querySelector("#close-5");
+            const trailer5 = document.querySelector("#trailer-5");
+            const video5 = document.querySelector("#s-5");
+
+            button5.addEventListener('click', () => {
+                trailer5.style.visibility = "visible";
+                trailer5.style.opacity = 1;
+
+            });
+            close5.addEventListener('click', () => {
+                trailer5.style.visibility = "hidden";
+                trailer5.style.opacity = 0;
+                video5.pause();
+                video5.currentTime = 0;
+
+            });
+        </script>
+        
+        <div class="card" style="
+      background-image: url('https://i.ytimg.com/vi/6r1BjJ8xF0Y/maxresdefault.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-6">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>d</span><span>d</span></span>
+                        <span><span>e</span><span>e</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>t</span><span>t</span></span>
+                        <span><span>h</span><span>h</span></span>
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Nairobi's death tears us apart</span>
+                        </span>
+                        <span>
+                            <span><span>Nairobi's death tears us apart</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-6" class="trailer">
+            <video id="s-6" src="videos/nairobi-death.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-6">
+        </div>
+        <script>
+            const button6 = document.querySelector("#btn-6");
+            const close6 = document.querySelector("#close-6");
+            const trailer6 = document.querySelector("#trailer-6");
+            const video6 = document.querySelector("#s-6");
+
+            button6.addEventListener('click', () => {
+                trailer6.style.visibility = "visible";
+                trailer6.style.opacity = 1;
+
+            });
+            close6.addEventListener('click', () => {
+                trailer6.style.visibility = "hidden";
+                trailer6.style.opacity = 0;
+                video6.pause();
+                video6.currentTime = 0;
+
+            });
+        </script>
+        
+        <div class="card" style="
+      background-image: url('https://i.ytimg.com/vi/yUJ42TweHUU/maxresdefault.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-7">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>d</span><span>d</span></span>
+                        <span><span>e</span><span>e</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>t</span><span>t</span></span>
+                        <span><span>h</span><span>h</span></span>
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>Berlin's death scene</span>
+                        </span>
+                        <span>
+                            <span><span>Berlin's death scene</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-7" class="trailer">
+            <video id="s-7" src="videos/berlin-death.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-7">
+        </div>
+        <script>
+            const button7 = document.querySelector("#btn-7");
+            const close7 = document.querySelector("#close-7");
+            const trailer7 = document.querySelector("#trailer-7");
+            const video7 = document.querySelector("#s-7");
+
+            button7.addEventListener('click', () => {
+                trailer7.style.visibility = "visible";
+                trailer7.style.opacity = 1;
+
+            });
+            close7.addEventListener('click', () => {
+                trailer7.style.visibility = "hidden";
+                trailer7.style.opacity = 0;
+                video7.pause();
+                video7.currentTime = 0;
+
+            });
+        </script>
+        
+        <div class="card" style="
+      background-image: url('https://filmdaily.co/wp-content/uploads/2020/02/money-heist-2-Professor.jpg');
+    ">
+            <div class="card__content">
+                <a class="play-button" id="btn-8">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 50 50">
+                        <path d="M42.7,42.7L25,50L7.3,42.7L0,25L7.3,7.3L25,0l17.7,7.3L50,25L42.7,42.7z" class="polygon"></path>
+                        <polygon points="32.5,25 21.5,31.4 21.5,18.6 "></polygon>
+                    </svg>
+                </a>
+                <div class="card__content--description">
+                    <h3 class="roll-up">
+                        <span><span>c</span><span>c</span></span>
+                        <span><span>l</span><span>l</span></span>
+                        <span><span>i</span><span>i</span></span>
+                        <span><span>m</span><span>m</span></span>
+                        <span><span>a</span><span>a</span></span>
+                        <span><span>x</span><span>x</span></span>
+                    </h3>
+                    <p class="text-reveal">
+                        <span>
+                            <span>This isn't a heist anymore, this is war!</span>
+                        </span>
+                        <span>
+                            <span><span>This isn't a heist anymore, this is war!</span></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="trailer-8" class="trailer">
+            <video id="s-8" src="videos/seoson3-ending.mp4" controls="true"></video>
+            <img src="images/close.png" class="close" id="close-8">
+        </div>
+        <script>
+            const button8 = document.querySelector("#btn-8");
+            const close8 = document.querySelector("#close-8");
+            const trailer8 = document.querySelector("#trailer-8");
+            const video8 = document.querySelector("#s-8");
+
+            button8.addEventListener('click', () => {
+                trailer8.style.visibility = "visible";
+                trailer8.style.opacity = 1;
+
+            });
+            close8.addEventListener('click', () => {
+                trailer8.style.visibility = "hidden";
+                trailer8.style.opacity = 0;
+                video8.pause();
+                video8.currentTime = 0;
+
+            });
+        </script>
+        
+        
+
+    </section>
+    <script src="JS/jquery-3.5.1.js"></script>
+    <script src="JS/tilt.jquery.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".card").tilt({
+                maxTilt: 20,
+                transition: true,
+                scale: 1.2,
+                glare: true,
+                maxGlare: 0.4,
+                speed: 2000,
+                perspective: 700,
+            });
+        });
+    </script>
+</body></html>

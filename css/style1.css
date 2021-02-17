@@ -1,0 +1,343 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #0c0c0c;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.clips {
+    font-family: "Exo 2", sans-serif;
+    color: #d8d8d8c9;
+    padding: 1%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), #000),
+        url(/images/wallpaper-lookin-up.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header p {
+    display: inline-block;
+}
+
+.clips .header h1 {
+    display: inline-block;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #ffffff;
+    margin: 0 0 1% 7%;
+    position: relative;
+}
+
+.clips .header h1:before {
+    content: "";
+    left: 0;
+    position: absolute;
+    height: 2px;
+    right: 20%;
+    background-color: red;
+    bottom: 0px;
+}
+
+.clips h1,
+.clips h3,
+.clips p {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.clips h1 {
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 60px;
+    padding-top: 40px;
+}
+
+.clips h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.clips p {
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.roll-up {
+    overflow: hidden;
+    position: relative;
+}
+
+.roll-up > span {
+    display: inline-block;
+    position: relative;
+}
+
+.roll-up > span:nth-child(1) {
+    transition-delay: 0.03s;
+}
+
+.roll-up > span:nth-child(2) {
+    transition-delay: 0.06s;
+}
+
+.roll-up > span:nth-child(3) {
+    transition-delay: 0.09s;
+}
+
+.roll-up > span:nth-child(4) {
+    transition-delay: 0.12s;
+}
+
+.roll-up > span:nth-child(5) {
+    transition-delay: 0.15s;
+}
+
+.roll-up > span:nth-child(6) {
+    transition-delay: 0.18s;
+}
+
+.roll-up > span:nth-child(7) {
+    transition-delay: 0.21s;
+}
+
+.roll-up > span:nth-child(8) {
+    transition-delay: 0.24s;
+}
+
+.roll-up > span:nth-child(9) {
+    transition-delay: 0.27s;
+}
+
+.roll-up > span > span {
+    display: inline-block;
+    transition: 0.6s cubic-bezier(0.7, 0.01, 0.37, 1);
+    transition-delay: inherit;
+}
+
+.roll-up > span > span:nth-child(1) {
+    position: relative;
+}
+
+.roll-up > span > span:nth-child(2) {
+    position: absolute;
+    transform: translateY(100%);
+    left: 0;
+    color: #e51616;
+}
+
+.text-reveal {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-reveal span {
+    display: block;
+    transition: cubic-bezier(0.7, 0.01, 0.37, 1) 0.6s;
+}
+
+.text-reveal > span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.text-reveal > span:nth-child(2) > span {
+    overflow: hidden;
+    transform: translateX(-100%);
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(6) {
+    transition-delay: 0.6s;
+}
+
+.text-reveal > span:nth-child(2) > span:nth-child(7) {
+    transition-delay: 0.7s;
+}
+
+.text-reveal > span:nth-child(2) > span > span {
+    transform: translateX(100%);
+    transition-delay: inherit;
+}
+
+.play-button {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+
+.play-button svg {
+    overflow: visible;
+}
+
+.play-button .polygon {
+    fill: #ff30307a;
+    transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.7, 0.01, 0.37, 1);
+    transform-origin: 50% 50%;
+    cursor: pointer;
+}
+
+polygon {
+    fill: #d8d8d8;
+}
+
+.card {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 32%;
+    width: 100%;
+    height: 250px;
+    padding: 3% 10%;
+    box-shadow: 0 16px 24px 2px rgba(255, 0, 0, 0.219),
+        0 6px 30px 5px rgba(255, 0, 0, 0.158),
+        0 8px 10px -5px rgba(255, 0, 0, 0.363);
+    background-size: cover;
+    cursor: pointer;
+    margin: 4% 7%;
+    filter: contrast(120%);
+    cursor: initial;
+}
+
+.card:before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0) 0%,
+            rgba(0, 0, 0, 0.75) 100%);
+}
+
+.card .card__content {
+    z-index: 1;
+}
+
+.card .card__content .card__content--description {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+    margin-right: -70px;
+    text-align: left;
+    max-width: 175px;
+}
+
+.card:hover .play-button .polygon {
+    transform: translateZ(0px) rotate(90deg);
+    fill: #ff3030;
+}
+
+.card .play-button .polygon:hover {
+    fill: #e21515;
+}
+
+.card:hover .roll-up > span > span:nth-child(1) {
+    transform: translateY(-100%);
+}
+
+.card:hover .roll-up > span > span:nth-child(2) {
+    transform: translateY(0);
+}
+
+.card:hover .text-reveal > span:nth-child(2) > span,
+.card:hover .text-reveal > span:nth-child(2) > span > span {
+    transform: translateX(0);
+}
+
+/* Video popup */
+.trailer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0.2s, opacity 0.2s;
+    backdrop-filter: blur(5px);
+}
+
+.trailer video {
+    position: relative;
+    max-width: 900px;
+    outline: none;
+}
+
+.close {
+  position: absolute;
+  top: 11%;
+  right: 15%;
+  cursor: pointer;
+  max-width: 36px;
+  filter: invert(0);
+  background-color: black;
+  border-radius: 50%;
+  padding: 0.5%;
+}
+
+.close:hover,
+.close:active {
+    filter: invert(1);
+}
+
+@media (max-width: 991px) {
+    .trailer video {
+        max-width: 90%;
+    }
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar {
+    width: 12px;
+    visibility: collapse;
+    /*opacity: 0;*/
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(transparent, #ff1e00);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(transparent, #00b7ff);
+}
